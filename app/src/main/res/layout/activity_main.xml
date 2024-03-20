@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E2E28"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="StopWatch"
+    android:textColor="@color/white"
+    android:textSize="30dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="30dp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center">
+
+        <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="start"
+        android:textSize="50dp"
+        android:background="@drawable/startbtn_shape">
+
+    </Button>
+    <Button
+        android:id="@+id/stopbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="stop"
+        android:textSize="50dp"
+        android:background="@drawable/stopbtn_shape"/>
+
+    </FrameLayout>
+    <Chronometer
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:id="@+id/Chronometer"/>
+
+<Button
+    android:id="@+id/resetbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reset"
+    android:textSize="40dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="70dp"
+    android:textAllCaps="false"
+    android:background="@drawable/resetbtn_shape"/>
+</LinearLayout>
